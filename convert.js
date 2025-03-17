@@ -3,11 +3,9 @@ const fs = require("fs");
 // Definir el mapeo de campos de Jira a Azure DevOps
 const fieldMapping = {
     "summary": "System.Title",
-    "description": "System.Description",
-   
+    "description": "System.Description",   
     "created": "System.CreatedDate",
-    "updated": "System.ChangedDate",
-    
+    "updated": "System.ChangedDate",   
     "creator.displayName": "System.CreatedBy",
     "labels": "System.Tags",
     "priority": "Microsoft.VSTS.Common.Priority",
@@ -25,14 +23,7 @@ const priorityMapping = {
     "Lowest": 5
 };
 
-// Mapeo de estado de Jira a valores válidos en Azure DevOps usando el ID del estado
-const stateMapping = {
-    "To Do": "9a06c842-44ed-4197-93d1-94eaeb172db7", // ID para 'New'
-    "In Progress": "70bef09f-f31f-4319-ac2a-49c2c2563dd4", // ID para 'Active'
-    "Completed": "373d83a9-ff8c-4701-a907-f288f0d604e7", // ID para 'Closed'
-    "Closed": "373d83a9-ff8c-4701-a907-f288f0d604e7", // ID para 'Closed'
-    "Removed": "Removed" // Si Jira tiene 'Removed' como estado
-};
+
 
 // Función para extraer valores anidados de un objeto
 function getNestedValue(obj, path) {
@@ -50,10 +41,7 @@ function convertJiraToAzure(jiraIssue) {
             value = value.join("; ");
         }
 
-        // Mapeo de estado: asegúrate de que el valor de estado sea válido
-        if (jiraField === "status.name" && stateMapping[value]) {
-            value = stateMapping[value]; // Mapea el estado al valor de Azure DevOps (ID específico)
-        }
+
 
         // Convertir prioridad a número
         if (jiraField === "priority" && value && typeof value === "object") {
