@@ -2,11 +2,11 @@
     "id": "10292",
     "key": "GG-289",
     "fields": {
-      "summary": "Issue creado",
+      "summary": "Issue Type Normalizado Prueba",
       "description": null,
       "issuetype": {
         "id": "10017",
-        "name": "Sub-task"
+        "name": "Historia"
       },
       "status": {
         "name": "Completed"

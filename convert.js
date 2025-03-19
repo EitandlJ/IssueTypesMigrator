@@ -9,9 +9,7 @@ const fieldMapping = {
     "creator.displayName": "System.CreatedBy",
     "labels": "System.Tags",
     "priority": "Microsoft.VSTS.Common.Priority",
-    "duedate": "Microsoft.VSTS.Scheduling.DueDate",
-    "customfield_10016": "Microsoft.VSTS.Scheduling.StoryPoints",
-    "customfield_10014": "System.Parent"
+    "duedate": "Microsoft.VSTS.Scheduling.DueDate"
 };
 
 // Mapeo de prioridad de Jira a valores numéricos en Azure DevOps
@@ -23,8 +21,6 @@ const priorityMapping = {
     "Lowest": 5
 };
 
-
-
 // Función para extraer valores anidados de un objeto
 function getNestedValue(obj, path) {
     return path.split('.').reduce((acc, key) => (acc && acc[key] !== undefined) ? acc[key] : null, obj);
@@ -34,27 +30,16 @@ function getNestedValue(obj, path) {
 function convertJiraToAzure(jiraIssue) {
     let azureFields = {};
 
-    for (const jiraField in fieldMapping) {
+    for (const jiraField in jiraIssue.fields) {
         let value = getNestedValue(jiraIssue.fields, jiraField);
         
         if (jiraField === "labels" && Array.isArray(value)) {
             value = value.join("; ");
         }
 
-
-
         // Convertir prioridad a número
         if (jiraField === "priority" && value && typeof value === "object") {
             value = priorityMapping[value.name] || 3; // Si no coincide, asignar prioridad 3 (Medium)
-        }
-
-        // Story Points y Parent deben ser valores directos
-        if (jiraField === "customfield_10016" && value && typeof value === "object") {
-            value = value.value || null;
-        }
-
-        if (jiraField === "customfield_10014" && value && typeof value === "object") {
-            value = value.value || null;
         }
 
         // Verificar si System.AreaPath tiene un valor válido
@@ -62,7 +47,14 @@ function convertJiraToAzure(jiraIssue) {
             value = ["\\ProjectName\\AreaPath"]; // Asigna un valor por defecto
         }
 
-        if (value !== null) {
+        // Manejo de custom fields
+        if (jiraField.startsWith("customfield_")) {
+            const fieldName = value && value.name ? value.name : "UnknownField";
+            const referenceName = `Custom.${jiraField.replace("customfield_", "")}.${fieldName.replace(/\s/g, "")}`;
+
+            // Si value es null o undefined, asignar un valor predeterminado
+            azureFields[referenceName] = value && value.value !== null ? value.value : "";
+        } else if (fieldMapping[jiraField] && value !== null) {
             azureFields[fieldMapping[jiraField]] = value;
         }
     }
@@ -84,3 +76,4 @@ module.exports = { convertJiraToAzure };
 
 // Prueba la conversión con un JSON de prueba
 testConversion();
+
