@@ -1,0 +1,182 @@
+{
+    "id": "10292",
+    "key": "GG-289",
+    "fields": {
+      "summary": "Issue Type Normalizado Prueba",
+      "description": null,
+      "issuetype": {
+        "id": "10017",
+        "name": "Historia"
+      },
+      "status": {
+        "name": "Completed"
+      },
+      "priority": {
+        "name": "Medium"
+      },
+      "creator": {
+        "displayName": "Adrián Montaño",
+        "emailAddress": ""
+      },
+      "reporter": {
+        "displayName": "Adrián Montaño",
+        "emailAddress": ""
+      },
+      "assignee": {
+        "displayName": "Adrián Montaño"
+      },
+      "created": "2025-02-24T20:00:05.427-0400",
+      "updated": "2025-02-27T11:26:25.856-0400",
+      "duedate": null,
+      "labels": [],
+      "components": [],
+      "fixVersions": [],
+      "attachment": [],
+      "subtasks": [],
+      "issuelinks": [],
+      "comments": [],
+      "customfield_10030": {
+        "name": "Submitted forms",
+        "value": null
+      },
+      "customfield_10031": {
+        "name": "Total forms",
+        "value": null
+      },
+      "customfield_10032": {
+        "name": "Design",
+        "value": null
+      },
+      "customfield_10034": {
+        "name": "Project overview key",
+        "value": null
+      },
+      "customfield_10035": {
+        "name": "Project overview status",
+        "value": null
+      },
+      "customfield_10027": {
+        "name": "[CHART] Time in Status",
+        "value": null
+      },
+      "customfield_10028": {
+        "name": "Locked forms",
+        "value": null
+      },
+      "customfield_10029": {
+        "name": "Open forms",
+        "value": null
+      },
+      "customfield_10020": {
+        "name": "Sprint",
+        "value": [
+          {
+            "id": 6,
+            "name": "Sprint 09",
+            "state": "closed",
+            "boardId": 3,
+            "goal": "",
+            "startDate": "2025-02-25T17:33:07.063Z",
+            "endDate": "2025-03-04T17:33:45.000Z",
+            "completeDate": "2025-03-05T15:17:13.255Z"
+          }
+        ]
+      },
+      "customfield_10021": {
+        "name": "Flagged",
+        "value": null
+      },
+      "customfield_10022": {
+        "name": "Target start",
+        "value": null
+      },
+      "customfield_10023": {
+        "name": "Target end",
+        "value": null
+      },
+      "customfield_10024": {
+        "name": "Sentiment",
+        "value": null
+      },
+      "customfield_10025": {
+        "name": "Goals",
+        "value": null
+      },
+      "customfield_10026": {
+        "name": "[CHART] Date of First Response",
+        "value": null
+      },
+      "customfield_10016": {
+        "name": "Story point estimate",
+        "value": null
+      },
+      "customfield_10017": {
+        "name": "Issue color",
+        "value": null
+      },
+      "customfield_10018": {
+        "name": "Parent Link",
+        "value": {
+          "hasEpicLinkFieldDependency": false,
+          "showField": false,
+          "nonEditableReason": {
+            "reason": "SUBTASK_LINK_SHOULD_BE_USED",
+            "message": "To set the parent for a sub-task, use the sub-task link."
+          }
+        }
+      },
+      "customfield_10019": {
+        "name": "Rank",
+        "value": "0|i001qz:"
+      },
+      "customfield_10010": {
+        "name": "Request Type",
+        "value": null
+      },
+      "customfield_10014": {
+        "name": "Epic Link",
+        "value": null
+      },
+      "customfield_10015": {
+        "name": "Start date",
+        "value": null
+      },
+      "customfield_10005": {
+        "name": "Change type",
+        "value": null
+      },
+      "customfield_10006": {
+        "name": "Change risk",
+        "value": null
+      },
+      "customfield_10007": {
+        "name": "Change reason",
+        "value": null
+      },
+      "customfield_10008": {
+        "name": "Actual start",
+        "value": null
+      },
+      "customfield_10009": {
+        "name": "Actual end",
+        "value": null
+      },
+      "customfield_10001": {
+        "name": "Team",
+        "value": null
+      },
+      "customfield_10002": {
+        "name": "Organizations",
+        "value": []
+      },
+      "customfield_10003": {
+        "name": "Approvers",
+        "value": null
+      },
+      "customfield_10004": {
+        "name": "Impact",
+        "value": null
+      }
+    }
+  }
+  
