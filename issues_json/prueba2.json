@@ -1,0 +1,42 @@
+{
+    "id": "10295",
+    "key": "EYSE1-420",
+    "fields": {
+      "summary": "Diseño de interfazzzzzzzzzzzzzzzz 1",
+      "description": "Crear los wireframes para la aplicación",
+      "issuetype": {
+        "id": "10018",
+        "name": "Historia"
+      },
+      "status": {
+        "name": "To Do"
+      },
+      "priority": {
+        "name": "Medium"
+      },
+      "creator": {
+        "displayName": "Lucía Méndez",
+        "emailAddress": "lucia@example.com"
+      },
+      "reporter": {
+        "displayName": "Lucía Méndez",
+        "emailAddress": "lucia@example.com"
+      },
+      "assignee": {
+        "displayName": "Javier Gómez"
+      },
+      "created": "2025-02-26T08:45:00.000-0400",
+      "updated": "2025-02-28T16:50:00.000-0400",
+      "duedate": "2025-03-12",
+      "labels": ["UI", "design"],
+      "components": ["Frontend"],
+      "customfield_13555": {
+        "name": "MigradorTodo1",
+        "value": "Pendiente de aprobación"
+      },
+      "customfield_13666": {
+        "name": "MigradorTodo2",
+        "value": "Paleta azul-verde"
+      }
+    }
+  }

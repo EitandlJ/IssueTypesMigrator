@@ -1,0 +1,8 @@
+{
+    "id": "customfield_13555",
+    "name": "MigradorTodo1",
+    "description": "Prueba para la demo de la migracion de custom fields",
+    "type": "String",
+    "referenceName": "Custom13555.MigradorTodo1",
+    "usage": "workItem"
+}
