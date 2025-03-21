@@ -1,8 +1,8 @@
 {
-    "id": "customfield_13336",
-    "name": "MigradorCustoms2",
+    "id": "customfield_13777",
+    "name": "MigradorTodo3",
     "description": "Prueba para la demo de la migracion de custom fields",
     "type": "String",
-    "referenceName": "Custom13336.MigradorCustoms2",
+    "referenceName": "Custom13777.MigradorTodo3",
     "usage": "workItem"
 }

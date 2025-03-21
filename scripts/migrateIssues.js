@@ -35,8 +35,10 @@ async function createWorkItem(workItemData, issueType) {
         });
 
         console.log("✅ Work Item Creado:", response.data.id);
+        return response.data.id; // Devolver el ID del Work Item creado
     } catch (error) {
         console.error("❌ Error al crear Work Item:", error.response ? error.response.data : error.message);
+        throw error; // Lanzar el error para manejarlo en el flujo principal
     }
 }
 

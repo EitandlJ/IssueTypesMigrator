@@ -62,18 +62,10 @@ function convertJiraToAzure(jiraIssue) {
     return { fields: azureFields };
 }
 
-// Leer el archivo de prueba y convertirlo
-function testConversion() {
-    const rawData = fs.readFileSync("sample_issue.json");
-    const jiraIssue = JSON.parse(rawData);
-    const azureWorkItem = convertJiraToAzure(jiraIssue);
-
-    console.log("JSON Convertido:", JSON.stringify(azureWorkItem, null, 2));
-}
 
 // Exportar la función
 module.exports = { convertJiraToAzure };
 
 // Prueba la conversión con un JSON de prueba
-testConversion();
+
 

@@ -1,0 +1,43 @@
+
+    {
+      "id": "10294",
+      "key": "EYSE1-419",
+      "fields": {
+        "summary": "Implementación de APIIIIIIIIIII 1",
+        "description": "Desarrollar la API para la autenticación",
+        "issuetype": {
+          "id": "10018",
+          "name": "Historia"
+        },
+        "status": {
+          "name": "In Progress"
+        },
+        "priority": {
+          "name": "High"
+        },
+        "creator": {
+          "displayName": "Carlos Ríos",
+          "emailAddress": "carlos@example.com"
+        },
+        "reporter": {
+          "displayName": "Carlos Ríos",
+          "emailAddress": "carlos@example.com"
+        },
+        "assignee": {
+          "displayName": "María López"
+        },
+        "created": "2025-02-25T10:15:00.000-0400",
+        "updated": "2025-02-28T14:30:00.000-0400",
+        "duedate": "2025-03-10",
+        "labels": ["backend", "api"],
+        "components": ["Authentication"],
+        "customfield_13555": {
+          "name": "MigradorTodo1",
+          "value": "Implementado con éxito"
+        },
+        "customfield_13666": {
+          "name": "MigradorTodo2",
+          "value": "Alto"
+        }
+      }
+    }
