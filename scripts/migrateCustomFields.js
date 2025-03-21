@@ -1,6 +1,6 @@
 const fs = require("fs");
 const axios = require("axios");
-const { AZURE_ORG, AZURE_TOKEN } = require("../config/env");
+const { AZURE_ORG, AZURE_TOKEN } = require("../config/credentials");
 
 const CUSTOM_FIELDS_PATH = "./json_files";
 

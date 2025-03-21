@@ -1,5 +1,5 @@
 const axios = require("axios");
-const env = require("../config/env"); // Importamos las variables de entorno desde env.js
+const env = require("../config/credentials"); // Importamos las variables de entorno desde env.js
 
 
 async function fetchProcessId() {

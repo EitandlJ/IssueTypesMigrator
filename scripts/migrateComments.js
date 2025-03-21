@@ -3,7 +3,7 @@ const marked = require('marked');
 const fs = require('fs');
 const path = require('path');
 const sharp = require('sharp');
-const env = require('../config/env'); // Importar las variables de entorno desde env.js
+const env = require('../config/credentials'); // Importar las variables de entorno desde env.js
 
 class JiraAzureMigrator {
   constructor() {
